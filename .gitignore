@@ -1,0 +1,30 @@
+# Environment
+.env
+
+# Storage
+storage/database.sqlite
+storage/database.sqlite-wal
+storage/database.sqlite-shm
+storage/installed.lock
+storage/logs/*.log
+storage/uploads/*
+!storage/uploads/.gitkeep
+!storage/uploads/submissions/
+storage/uploads/submissions/*
+!storage/uploads/submissions/.gitkeep
+storage/backups/*
+!storage/backups/.gitkeep
+storage/cache/*
+!storage/cache/.gitkeep
+scratch/
+
+# Vendor
+/vendor/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
