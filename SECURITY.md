@@ -10,8 +10,7 @@ Only the latest active release branch receives security patches:
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 2.0.x   | :white_check_mark: |
-| 1.0.x   | :x:                |
+| 1.0.x   | :white_check_mark: |
 
 ---
 
@@ -25,7 +24,7 @@ Lazy LMS is built around zero-trust and defense-in-depth principles:
 
 2. **Session Security & Remember-Me**:
    - Continuous session duration is capped at **5 hours** of continuous use.
-   - Persistent "Remember Me" logins issue a rotating, cryptographically random token with SHA-256 server-side hashing, expiring in **12 hours**. Tokens are transmitted via `HttpOnly`, `SameSite=Lax`, and `Secure` cookies.
+   - Persistent "Remember Me" logins issue a rotating, cryptographically random token with SHA-256 server-side hash, expiring in **12 hours**. Tokens are transmitted via `HttpOnly`, `SameSite=Lax`, and `Secure` cookies.
    - Session fixation is mitigated with proactive ID regeneration upon role elevation and authentication.
 
 3. **New Device & IP Login Auditing**:
@@ -47,9 +46,10 @@ Lazy LMS is built around zero-trust and defense-in-depth principles:
 
 If you discover a security vulnerability in Lazy LMS, please follow responsible disclosure:
 
-1. **Do not disclose the issue publicly** (e.g., via GitHub Issues, public discussions, or social media).
-2. Email your findings directly to the maintainers at:
-   **security@lazylms.org** (or open a private [GitHub Security Advisory](https://github.com/nadeemmhdm/lazy-lms/security/advisories)).
+1. **Do not disclose the issue publicly** (e.g., via public GitHub Issues, public pull requests, or social media).
+2. Report the vulnerability privately and securely using **GitHub Private Vulnerability Reporting**:
+   - Navigate to the repository's [**Security Advisories**](https://github.com/nadeemmhdm/lazy-lms/security/advisories) tab.
+   - Click [**Report a vulnerability**](https://github.com/nadeemmhdm/lazy-lms/security/advisories/new) to open an encrypted private disclosure with the maintainers.
 3. Please include:
    - A detailed description of the vulnerability.
    - Step-by-step reproduction instructions or a minimal Proof of Concept (PoC).
